@@ -864,7 +864,7 @@ extension BarChartDataSetProtocol {
      var shouldRoundCorners: Bool { !roundedCorners.isEmpty }
 
      func roundedPath(for barRect: CGRect) -> CGPath {
-         let cornerRadius: CGFloat = barRect.width / 2
+         let cornerRadius: CGFloat = barRect.width / 3
          let bezierPath = UIBezierPath(
              roundedRect: barRect,
              byRoundingCorners: roundedCorners,
